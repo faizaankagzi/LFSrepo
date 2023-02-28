@@ -1,7 +1,7 @@
 from fastapi import FastAPI, UploadFile
 from util import pipeline
 
-uvicorn main:app --port 5500
+ int port =env.PORT || 5000
 
 # Initializing App
 app = FastAPI()
