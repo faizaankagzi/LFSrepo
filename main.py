@@ -1,8 +1,6 @@
 from fastapi import FastAPI, UploadFile
 from util import pipeline
 
- int port =env.PORT || 5000
-
 # Initializing App
 app = FastAPI()
 
