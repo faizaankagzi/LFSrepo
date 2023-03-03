@@ -18,7 +18,7 @@ app.add_middleware(
 from pydantic import BaseModel
 class Schema(BaseModel):
 	# img_base64:str
-    img: UploadFile
+    image: UploadFile
 
 print(" ........... App Started ........... ")
 
@@ -29,8 +29,8 @@ def index():
 	return "This is the API for EHospital Webpage"
       
 @app.post("/predict")
-def endpoint_face_analytics(img: UploadFile):
-	response =  pipeline(img)
+def endpoint_face_analytics(image: UploadFile):
+	response =  pipeline(image)
 	return response
 
 # @app.post("/predict")
