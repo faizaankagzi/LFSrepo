@@ -28,8 +28,7 @@ def predict(X):
 	pred = MODEL.predict(X)
 	i = np.argmax(pred[0])
 	return {
-		"prediction": CLASSES[i],
-		"probability": round(pred[0, i].tolist(), 3)
+	     CLASSES[i]
 	}
 
 def pipeline(img):
