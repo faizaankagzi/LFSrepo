@@ -28,7 +28,7 @@ def predict(X):
 	pred = MODEL.predict(X)
 	i = np.argmax(pred[0])
 	return {
-	     	"prediction":CLASSES[i] "accuracy": round(pred[0, i].tolist(), 3)
+	     	"prediction":CLASSES[i]
 	}
 
 def pipeline(img):
