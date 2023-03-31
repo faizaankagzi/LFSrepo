@@ -3,7 +3,7 @@ import numpy as np
 import io
 
 MODEL = tf.keras.models.load_model("model.h5")
-CLASSES = ["Congratulations! The patient is healthy", "Sorry! You've been diagnosed with Pneumonia, Seek medical help"]
+CLASSES = ["The patient is healthy", "Patient has pneumonia"]
 
 def load_img(img):
 	# Reading The Image
